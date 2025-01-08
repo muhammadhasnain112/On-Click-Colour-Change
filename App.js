@@ -138,11 +138,19 @@
 
 
 
-function btn(){
-let random1 = Math.ceil(Math.random()*275)
-let random2 = Math.ceil(Math.random()*275)
-let random3 = Math.ceil(Math.random()*275);
-document.body.style.backgroundColor = `rgb(${random1},${random2},${random3})`;
+function btn() {
+    let random1 = Math.ceil(Math.random() * 275)
+    let random2 = Math.ceil(Math.random() * 275)
+    let random3 = Math.ceil(Math.random() * 275);
+    document.body.style.backgroundColor = `rgb(${random1},${random2},${random3})`;
 
 
 }
+
+let abc = document.getElementById("btn")
+abc.addEventListener('click', function () {
+    let random1 = Math.ceil(Math.random() * 275)
+    let random2 = Math.ceil(Math.random() * 275)
+    let random3 = Math.ceil(Math.random() * 275);
+    abc.style.backgroundColor = `rgb(${random1},${random2},${random3})`
+})
